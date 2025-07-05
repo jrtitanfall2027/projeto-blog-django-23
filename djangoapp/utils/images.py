@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from django.conf import settings
-from PIL import Image
+from django.conf import settings # type: ignore
+from PIL import Image # type: ignore
 
 
 def resize_image(image_django, new_width=800, optimize=True, quality=60):
