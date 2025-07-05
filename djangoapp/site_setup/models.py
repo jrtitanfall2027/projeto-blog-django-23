@@ -1,4 +1,4 @@
-from django.db import models
+from django.db import models # type: ignore
 from utils.images import resize_image
 from utils.model_validators import validate_png
 
