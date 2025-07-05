@@ -1,4 +1,4 @@
-from django.contrib import admin
+from django.contrib import admin # type: ignore
 from site_setup.models import MenuLink, SiteSetup
 
 # @admin.register(MenuLink)
