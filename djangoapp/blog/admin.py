@@ -1,9 +1,8 @@
 # type: ignore
-
 from blog.models import Category, Page, Post, Tag
 from django.contrib import admin
 from django.utils.safestring import mark_safe
-from django_summernote.admin import SummernoteModelAdmin # type: ignore
+from django_summernote.admin import SummernoteModelAdmin
 
 
 @admin.register(Tag)
