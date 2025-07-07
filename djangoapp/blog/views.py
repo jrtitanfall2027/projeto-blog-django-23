@@ -1,12 +1,11 @@
 # type: ignore
-
-
 from typing import Any, Dict
 
 from blog.models import Page, Post
 from django.contrib.auth.models import User
 from django.db.models import Q
 from django.db.models.query import QuerySet
+# from django.http import Http404, HttpResponse
 from django.http import Http404
 from django.shortcuts import redirect
 from django.views.generic import DetailView, ListView
@@ -177,3 +176,7 @@ class PostDetailView(DetailView):
 
     def get_queryset(self) -> QuerySet[Any]:
         return super().get_queryset().filter(is_published=True)
+
+
+# def home(request):
+#     return HttpResponse("Página inicial do blog!")

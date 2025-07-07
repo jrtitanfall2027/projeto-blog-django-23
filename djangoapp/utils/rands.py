@@ -1,7 +1,7 @@
 import string
 from random import SystemRandom
 
-from django.utils.text import slugify
+from django.utils.text import slugify # type: ignore
 
 
 def random_letters(k=5):

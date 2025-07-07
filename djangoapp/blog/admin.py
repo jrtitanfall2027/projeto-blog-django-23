@@ -11,7 +11,7 @@ class TagAdmin(admin.ModelAdmin):
     list_display_links = 'name',
     search_fields = 'id', 'name', 'slug',
     list_per_page = 10
-    ordering = '-id',
+    ordering = 'id',
     prepopulated_fields = {
         "slug": ('name',),
     }
@@ -23,7 +23,7 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display_links = 'name',
     search_fields = 'id', 'name', 'slug',
     list_per_page = 10
-    ordering = '-id',
+    ordering = 'id',
     prepopulated_fields = {
         "slug": ('name',),
     }
@@ -38,7 +38,7 @@ class PageAdmin(SummernoteModelAdmin):
     list_per_page = 50
     list_filter = 'is_published',
     list_editable = 'is_published',
-    ordering = '-id',
+    ordering = 'id',
     prepopulated_fields = {
         "slug": ('title',),
     }
@@ -53,7 +53,7 @@ class PostAdmin(SummernoteModelAdmin):
     list_per_page = 50
     list_filter = 'category', 'is_published',
     list_editable = 'is_published',
-    ordering = '-id',
+    ordering = 'id',
     readonly_fields = (
         'created_at', 'updated_at', 'created_by', 'updated_by',
         'link',
